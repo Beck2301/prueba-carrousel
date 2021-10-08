@@ -1,0 +1,482 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.0.9/dist/css/splide.min.css">
+
+
+<div id="image-slider" class="splide">
+  <div class="splide__track">
+    <ul class="splide__list">
+      <li class="splide__slide">
+       Texto pertenece a la primera card
+      </li>
+      <li class="splide__slide">
+        Texto pertenece a la segudna card
+      </li>
+      <li class="splide__slide">
+        Texto pertenece a la terceera card
+      </li>
+    </ul>
+  </div>
+</div>
+<div id="thumbnail-slider" class="splide">
+  <div class="splide__track">
+    <ul class="splide__list">
+      <li class="splide__slide">
+        <div class="glide carousel">
+          <div class="glide__track carousel__track" data-glide-el="track">
+            
+            <ul class="glide__slides carousel__items">
+                
+                    <li class="glide__slide carousel__item">
+                        <div class="carousel__item--inner">
+                                    <span class="carousel-icon">
+                                    <img src="https://wvw.itqscr.com/hubfs/lps/itqs-bofu/svgs/Group%2016.svg"  class="card--image">
+                                </span>
+                      
+                                <span class="carousel-header">Texto titulo 1</span>
+                          
+                          <div class="flecha--abajo"><img src="https://wvw.itqscr.com/hubfs/raw_assets/public/itqs/images/lp-bofu-azure/flecha-svg.svg"></div>
+                          
+                        </div>
+                  </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="splide__slide">
+        <div class="glide carousel">
+          <div class="glide__track carousel__track" data-glide-el="track">
+            
+            <ul class="glide__slides carousel__items">
+                
+                    <li class="glide__slide carousel__item">
+                        <div class="carousel__item--inner">
+                                    <span class="carousel-icon">
+                                    <img src="https://wvw.itqscr.com/hubfs/lps/itqs-bofu/svgs/Group%2016.svg"  class="card--image">
+                                </span>
+                      
+                                <span class="carousel-header">Texto titulo 2</span>
+                          
+                          <div class="flecha--abajo"><img src="https://wvw.itqscr.com/hubfs/raw_assets/public/itqs/images/lp-bofu-azure/flecha-svg.svg"></div>
+                          
+                        </div>
+                  </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="splide__slide">
+        <div class="glide carousel">
+          <div class="glide__track carousel__track" data-glide-el="track">
+            
+            <ul class="glide__slides carousel__items">
+                
+                    <li class="glide__slide carousel__item">
+                        <div class="carousel__item--inner">
+                                    <span class="carousel-icon">
+                                    <img src="https://wvw.itqscr.com/hubfs/lps/itqs-bofu/svgs/Group%2016.svg"  class="card--image">
+                                </span>
+                      
+                                <span class="carousel-header">Texto titulo 3</span>
+                          
+                          <div class="flecha--abajo"><img src="https://wvw.itqscr.com/hubfs/raw_assets/public/itqs/images/lp-bofu-azure/flecha-svg.svg"></div>
+                          
+                        </div>
+                  </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+
+
+
+
+<style>
+
+.glide {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box; }
+  .glide * {
+    box-sizing: inherit; }
+  .glide__track {
+    overflow: hidden; }
+  .glide__slides {
+    position: relative;
+    width: 100%;
+    list-style: none;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    touch-action: pan-Y;
+    overflow: hidden;
+    padding: 0;
+    white-space: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
+    will-change: transform; }
+    .glide__slides--dragging {
+      user-select: none; }
+  .glide__slide {
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    white-space: normal;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent; }
+    .glide__slide a {
+      user-select: none;
+      -webkit-user-drag: none;
+      -moz-user-select: none;
+      -ms-user-select: none; }
+  .glide__arrows {
+    -webkit-touch-callout: none;
+    user-select: none; }
+  .glide__bullets {
+    -webkit-touch-callout: none;
+    user-select: none; }
+  .glide--rtl {
+    direction: rtl; }
+
+.glide__arrow {
+    position: absolute;
+    display: block;
+    top: 50%;
+    z-index: 2;
+    color: black;
+    text-transform: uppercase;
+    /* padding: 9px 12px; */
+    /* background-color: transparent; */
+    /* border: 2px solid rgba(255,255,255,0.5); */
+    /* border-radius: 4px; */
+    /* box-shadow: 0 0.25em 0.5em 0 rgb(0 0 0 / 10%); */
+    /* text-shadow: 0 0.25em 0.5em rgb(0 0 0 / 10%); */
+    opacity: 1;
+    cursor: pointer;
+    transition: opacity 150ms ease,border 300ms ease-in-out;
+    transform: translateY(-50%);
+    line-height: 1;
+}
+  .glide__arrow:focus {
+    outline: none; }
+  .glide__arrow:hover {
+    border-color: white; }
+  .glide__arrow--left {
+    left: 2em; }
+  .glide__arrow--right {
+    right: 2em; }
+  .glide__arrow--disabled {
+    opacity: 0.33; }
+
+.glide__bullets {
+  position: absolute;
+  z-index: 2;
+  bottom: 2em;
+  left: 50%;
+  display: inline-flex;
+  list-style: none;
+  transform: translateX(-50%); }
+
+.glide__bullet {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 9px;
+  height: 9px;
+  padding: 0;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+  line-height: 0;
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.1);
+  margin: 0 0.25em; }
+  .glide__bullet:focus {
+    outline: none; }
+  .glide__bullet:hover, .glide__bullet:focus {
+    border: 2px solid white;
+    background-color: rgba(255, 255, 255, 0.5); }
+  .glide__bullet--active {
+    background-color: white; }
+
+.glide--swipeable {
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab; }
+
+.glide--dragging {
+  cursor: grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing; }
+
+
+.carousel-wrap{
+    margin: 0 -30px;
+    position: relative;
+}
+
+@media(min-width: 768px){
+    .carousel-wrap{
+        margin: 0;
+    }
+}
+
+/*.carousel__track{
+    padding: 30px;
+}*/
+
+.carousel__items{
+    padding-bottom: 40px !important;
+}
+
+.carousel__item{
+     padding: 0 12px 0 12px;
+    height: auto !important;
+}
+
+@media(min-width: 768px){
+    .carousel__item{
+          padding: 0 12px 0 12px;
+    }
+}
+
+@media(min-width: 1920px){
+    .carousel__item{
+         padding: 0 12px 0 12px;
+    }
+}
+
+.carousel__item--inner{
+    text-align: center;
+    padding: 36px 36px 11px;
+    box-shadow: 3px 8px 10px rgb(0 0 0 / 25%);
+    background-color: #ffffff;
+    height: 100%;
+   color: #9B9999;
+}
+
+.carousel-icon,
+.carousel-header,
+.carousel-description{
+    display: block
+}
+
+.carousel-icon {
+  
+    width: 93px;
+    margin: 0 auto;
+}
+
+.carousel-icon img {
+   /* width: 100%;*/
+  filter:invert(25%) sepia(2%) saturate(234%) hue-rotate(314deg) brightness(83%) contrast(94%);
+}
+
+.carousel-header {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.carousel-description {
+    font-size: 15px;
+    color: #031f42;
+}
+
+@media(min-width: 1600px){
+    .carousel-header,
+    .carousel-description{
+        font-size: 20px;
+    }
+}
+
+
+
+.carousel__arrows{
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    padding: 0 10px;
+}
+
+@media(min-width: 768px){
+    .carousel__arrows{
+        padding: 0;
+    }
+}
+
+
+@media(min-width: 1200px){
+    .carousel__arrows{
+        top: 40%;
+    }
+}
+
+.carousel__arrow{
+    width: 25px;
+    overflow: hidden;
+    height: 54px;
+    font-size: 40px;
+}
+
+.carousel__arrow:before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+@media(min-width: 768px){
+    .carousel__arrow--prev{
+        -webkit-transform: translateX(-10px);
+        -ms-transform: translateX(-10px);
+        transform: translateX(-10px);
+    }
+}
+
+@media(min-width: 1200px){
+    .carousel__arrow--prev{
+        -webkit-transform: translateX(-150px);
+        -ms-transform: translateX(-150px);
+        transform: translateX(-150px);
+    }
+}
+
+.carousel__arrow--prev:before{
+
+}
+
+@media(min-width: 768px){
+    .carousel__arrow--next{
+        -webkit-transform: translateX(10px);
+        -ms-transform: translateX(10px);
+        transform: translateX(10px);
+    }
+}
+
+@media(min-width: 1200px){
+    .carousel__arrow--next{
+        -webkit-transform: translateX(150px);
+        -ms-transform: translateX(150px);
+        transform: translateX(150px);
+    }
+}
+
+.carousel__arrow--next:before{
+   
+}
+
+.flecha--abajo{
+  margin-top:25px;
+}
+
+.card--image{
+
+  
+}
+
+
+.cards--slide--container{
+  padding: 150px;
+  padding-top: 0;
+
+  
+}
+
+@media(min-width: 1200px){
+.cards--slide--container{
+  padding: 228px;
+    padding-top: 0;
+
+}
+}
+@media (min-width: 1258px) and (max-width: 1880px){
+
+.cards--slide--container{
+  padding: 176px;
+    padding-top: 0;
+
+
+}
+}
+.carousel__item--inner{
+     transition: all 0.3s ease-out; 
+  }
+  .carousel__item--inner:hover{
+     transition: all 0.3s ease-out;
+    background-color: #0093D8 !important;
+     transform: scale(1.1) ;
+    color:white;
+    fill: white;
+    padding:36px 36px 49px;
+    
+        
+  }
+
+  .carousel__item--inner:hover .carousel-header{
+  
+          margin-bottom: 0px;
+        
+  }
+  .carousel__item--inner:hover img{
+filter: invert(2%) sepia(100%) saturate(0%) hue-rotate(9deg) brightness(106%) contrast(101%) !important;
+  }
+
+.flecha--abajo{ 
+        transition: all 0.3s ease-out;
+}
+
+  .carousel__item--inner:hover .flecha--abajo img{  
+     transform: rotate(-180deg);
+      transition: all 0.3s ease-out;
+     color:white;
+    fill: white;
+   filter:invert(2%) sepia(100%) saturate(0%) hue-rotate(9deg) brightness(106%) contrast(101%) !important;
+
+  }
+ .carousel__item--inner:hover .flecha--abajo{  
+    margin-top: 8px;
+  }
+
+.flecha--abajo{
+filter: invert(54%) sepia(91%) saturate(1896%) hue-rotate(167deg) brightness(85%) contrast(101%);
+
+}
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.0.9/dist/js/splide.js"></script>
+<script>
+
+document.addEventListener( 'DOMContentLoaded', function () {
+  var main = new Splide( '.splide', {
+    type       : 'fade',
+    pagination : false,
+  } );
+
+  var thumbnails = new Splide( '#thumbnail-slider', {
+    fixedWidth  : 500,
+    fixedHeight : 60,
+    gap         : 10,
+    rewind      : true,
+    pagination  : false,
+    cover       : true,
+    isNavigation: true,
+    breakpoints : {
+      600: {
+        fixedWidth : 60,
+        fixedHeight: 44,
+      },
+    },
+  } );
+
+  main.sync( thumbnails );
+  main.mount();
+  thumbnails.mount();
+} );
+</script>
